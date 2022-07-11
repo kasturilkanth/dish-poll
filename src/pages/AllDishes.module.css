@@ -1,0 +1,53 @@
+.alldishes {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+.alldishes section {
+  width: 200px;
+  height: 150px;
+}
+
+.alldishes button {
+  width: 80px;
+  height: 25px;
+  border-radius: 4px;
+  color: white;
+  background-color: #6a040f;
+  margin-left: 50px;
+}
+.alldishes button:active {
+  transform: scale(1.1);
+}
+
+.alldishes section ul li {
+  background-color: #ffccd5;
+  border: 1px solid #ccc;
+  margin-top: 1px;
+  border-radius: 4px;
+  list-style-type: none;
+}
+
+.alldishes section ul {
+  padding: 5px;
+  border: 2px solid #ccc;
+}
+
+.votedDish {
+  position: fixed;
+  right: 0;
+  top: 45%;
+  animation-name: slider;
+  animation-duration: 500ms;
+  transform: translateX(400px);
+  animation-fill-mode: forwards;
+}
+.votedDish h5 {
+  text-align: center;
+}
+@keyframes slider {
+  100% {
+    transform: translateX(-0px);
+  }
+}
