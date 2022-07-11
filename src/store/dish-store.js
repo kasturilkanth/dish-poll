@@ -11,7 +11,7 @@ export const DishStoreContextProvider = (props) => {
     async function getAllDishes() {
       try {
         const res = await fetch(
-          "https://raw.githubusercontent.com/syook/react-dishpoll/main/db.json"
+          " https://raw.githubusercontent.com/syook/react-dishpoll/main/db.json"
         );
         const data = await res.json();
         setDishes(data);
